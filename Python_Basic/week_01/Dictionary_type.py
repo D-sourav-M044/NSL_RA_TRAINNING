@@ -10,4 +10,4 @@ my_dic[3]="three"
 print(my_dic)
 
 #get_method
-
+print(my_dic.get(5,"that's not in dictionary"))
