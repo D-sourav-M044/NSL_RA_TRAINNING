@@ -38,3 +38,19 @@ print(data[2:-1])
 print(data[::-1])
 new_data = data[::-1]
 print(new_data)
+
+matrix_1d =[]
+matrix_2d = [[2,3,4],
+            [1,2,3]]
+for row in matrix_2d:
+    for num in row:
+        matrix_1d.append(num)
+print(matrix_1d)
+
+#list_comprehensio:
+
+#vowel = ['a','e','i','o','u']
+vowel = 'aeiou'
+sentence = "i am a kuetian"
+new_sentence = ''.join(i for i in sentence if i not in vowel )
+print(new_sentence)
