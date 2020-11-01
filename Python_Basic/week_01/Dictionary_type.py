@@ -12,4 +12,13 @@ print(my_dic)
 #get_method
 print(my_dic.get(5,"that's not in dictionary"))
 
-new_dic = []
+rank = [1,2,3]
+fruit = ['magno','apple','banana']
+dic = {}
+dic = {rank[i] : fruit[i] for i in range(len(fruit))}
+print(dic)
+
+for i in rank:
+    for j in fruit:
+        print(i)
+        print(j)
