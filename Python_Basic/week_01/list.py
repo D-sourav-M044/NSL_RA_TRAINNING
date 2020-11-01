@@ -31,3 +31,10 @@ print(max(char))
 #range 
 data =list(range(5,50,5))
 print(data)
+
+data = [1,2,3,4,5]
+print(data[2:4])
+print(data[2:-1])
+print(data[::-1])
+new_data = data[::-1]
+print(new_data)
