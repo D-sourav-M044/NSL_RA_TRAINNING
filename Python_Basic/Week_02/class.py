@@ -3,7 +3,7 @@ class Monster :
     def __init__(self,color,head):
         self.color = color
         self.head = head
-    def attack(sefl):
+    def attack(self):
         print("it's working")
 #creation
 
