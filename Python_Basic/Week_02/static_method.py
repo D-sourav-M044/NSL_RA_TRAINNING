@@ -8,6 +8,6 @@ class pizza:
         else:
             return True
 fruits =["mango","banana","pinaapple"]
-if (pizza.valid_topping(i) for i in fruits):
+if all(pizza.valid_topping(i) for i in fruits):
     #pizza = pizza(fruits)
     print(pizza(fruits))
