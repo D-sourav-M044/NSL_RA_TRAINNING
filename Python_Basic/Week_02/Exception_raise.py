@@ -8,15 +8,12 @@ class Complex(object):
     def __add__(self, no):
         real = int(self.real) + int(no.real)
         imaginary = int(self.imaginary) + int(no.imaginary)
-        print(str(real)+"+"+str(imaginary)+"i")
+        return Complex(real,imaginary)
         
     def __sub__(self, no):
         real = int(self.real) - int(no.real)
         imaginary = int(self.imaginary) - int(no.imaginary)
-        if imaginary>=0:
-            print(str(real)+"+"+str(imaginary))
-        else:
-            print(str(real)+str(imaginary)+"i")
+        return Complex(real,imaginary)
         
 
     def __str__(self):
@@ -39,7 +36,7 @@ if __name__ == '__main__':
     one = Complex(a,b)
     two = Complex(c,d)
     sum = one + two
-    sub =one - two
-    sum.__str__()
     print(sum)
+    sub = one -two
     print(sub)
+    
