@@ -46,7 +46,7 @@ while n>0:
     s = input()
     t = check_string(s)
     if t:
-        print('yes')
+        print('Yes')
     else:
-        print('no')
+        print('No')
     n-=1
