@@ -4,7 +4,7 @@ tail = -1
 starpoint = 2
 capacity = 5
 q = [None for i in range(0,capacity)]
-def enqueue(value):
+def enque(value):
     global head
     global tail
     global capacity
@@ -19,7 +19,7 @@ def enqueue(value):
     else:
         tail = (tail+1)%capacity
         q[tail] = value
-def dequeue():
+def deque():
     global head
     global tail
     global capacity
@@ -34,12 +34,16 @@ def dequeue():
     else:
         head = (head+1)%capacity
 
-enqueue(2)
-enqueue(3)
-enqueue(4)
-enqueue(5)
-enqueue(6)
-enqueue(7)
+enque(2)
+enque(3)
+enque(4)
+enque(5)
+enque(6)
+enque(7)
 print(q)
-dequeue()
+deque()
 print(q)
+
+from typing import Deque
+
+
