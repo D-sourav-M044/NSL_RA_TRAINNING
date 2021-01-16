@@ -83,6 +83,7 @@ while carryOn:
         paddle.moveUp(5)
     if keys[pygame.K_DOWN]:
         paddle.moveDown(5)
+    
  
     # --- Game logic should go here
     all_sprites_list.update()
@@ -146,12 +147,12 @@ while carryOn:
  
     #Now let's draw all the sprites in one go. (For now we only have 2 sprites!)
     all_sprites_list.draw(screen)
- 
+    
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
  
     # --- Limit to 60 frames per second
-    clock.tick(60)
+    clock.tick(70)
  
 #Once we have exited the main program loop we can stop the game engine:
 pygame.quit()
